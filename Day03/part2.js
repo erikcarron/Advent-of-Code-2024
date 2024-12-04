@@ -1,12 +1,5 @@
 let fs = require('fs')
 
-let parseInput = input => {
-  let pattern = /mul\((\d{1,3}),(\d{1,3})\)/gmi
-
-  let matches = input.match(pattern)
-  return matches
-}
-
 let findInstructions = input => {
   let pattern = /mul\((\d{1,3}),(\d{1,3})\)|do\(\)|don't\(\)/gmi
 
